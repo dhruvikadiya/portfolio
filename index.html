@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My 3D Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- floating 3D cubes (background) -->
+  <div class="bg-shapes">
+    <div class="cube c1"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div class="cube c2"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div class="cube c3"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <div class="cube c4"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+
+  <!-- navigation -->
+  <nav>
+    <div class="logo">Dhruvika kadiya</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#register">Register</a></li>
+    </ul>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-text">
+      <h3>Hello, I'm</h3>
+      <h1><span>Dhruvika kadiya</span></h1>
+      <h2 id="typing"></h2>
+      <p>Welcome to my personal portfolio. I love creating beautiful and useful things. Scroll down to learn more about me, see my photos, and get in touch.</p>
+      <a href="#about" class="btn">About Me</a>
+      <a href="#register" class="btn outline">Register</a>
+      <div class="socials">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">in</a>
+        <a href="#" title="LinkedIn">li</a>
+        <a href="#" title="GitHub">gh</a>
+      </div>
+    </div>
+
+    <!-- DP photo: put your photo at images/dp.jpg -->
+    <div class="dp-wrap">
+      <div class="dp-card">
+        <img src="c:\Users\janak\Desktop\my website\portfolio\dpimg.jpeg" alt="My profile photo">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="title">About <span>Me</span></h2>
+    <div class="about-grid">
+      <div class="glass">
+        <h3>Who am I?</h3>
+        <p>I have completed my MCA and i am currently developing my skill in python,AI/ML and web       development.
+
+          i enjoy learning new technologies and working on prectical projects.my goal id to start my carrer in the IT industry and grow as a skilled dveloper.</p>
+      </div>
+
+      <div class="glass">
+        <h3>My Information</h3>
+        <ul class="info-list">
+          <li><b>Name</b><span>Dhruvika kadiya R.</span></li>
+          <li><b>Email</b><span>dhruvikakadiya3@gmail.com</span></li>
+          <li><b>Location</b><span>Malpur,Arvalli</span></li>
+          <li><b>Education</b><span>MCA / GUJARAT TECHNOLOGICAL UNIVERSITY</span></li>
+          <!-- RESUME: later replace href="#" with your resume file or link (e.g. resume.pdf) -->
+          <li><b>📄 Resume</b><span><a href="c:\Users\janak\Desktop\my website\portfolio\dhruvi CV Resume.pdf" target="_blank" rel="noopener" class="resume-link">View Resume</a></span></li>
+        </ul>
+      </div>
+
+      <div class="glass">
+        <h3>My Skills</h3>
+        <div class="skill"><small><span>HTML</span></small><div class="bar"><i style="width:90%"></i></div></div>
+        <div class="skill"><small><span>CSS</span></small><div class="bar"><i style="width:85%"></i></div></div>
+        <div class="skill"><small><span>mongo db</span></small><div class="bar"><i style="width:85%"></i></div></div>
+        <div class="skill"><small><span>Java script</span></small><div class="bar"><i style="width:80%"></i></div></div>
+         <div class="skill"><small><span>My SQL</span></small><div class="bar"><i style="width:80%"></i></div></div>
+        <div class="skill"><small><span>Python</span></small><div class="bar"><i style="width:75%"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY: put photos at images/g1.jpg ... g6.jpg -->
+  <section id="gallery">
+    <h2 class="title">My <span>Gallery</span></h2>
+    <div class="gallery">
+      <div class="photo"><img src="c:\Users\janak\Desktop\my website\screenshot img\Screenshot img.png" alt="Photo 1"><span>Memory One</span></div>
+      <div class="photo"><img src="c:\Users\janak\Desktop\my website\screenshot img\Screenshot img3.png" alt="Photo 2"><span>Memory Two</span></div>
+      <div class="photo"><img src="c:\Users\janak\Desktop\my website\screenshot img\Screenshot img5.png" alt="Photo 3"><span>Memory Three</span></div>
+      <div class="photo"><img src="c:\Users\janak\Desktop\my website\screenshot img\Screenshot img6.png" alt="Photo 4"><span>Memory Four</span></div>
+      <div class="photo"><img src="c:\Users\janak\Desktop\my website\screenshot img\Screenshot img7.png" alt="Photo 5"><span>Memory Five</span></div>
+      <div class="photo"><img src="c:\Users\janak\Desktop\my website\screenshot img\Screenshot img8.png" alt="Photo 6"><span>Memory Six</span></div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM -->
+  <section id="register">
+    <h2 class="title">Registration <span>Form</span></h2>
+    <div class="form-wrap">
+      <form class="glass" id="regForm">
+        <div class="row">
+          <div class="field"><label for="fname">First Name</label><input id="fname" type="text" placeholder="First name" required></div>
+          <div class="field"><label for="lname">Last Name</label><input id="lname" type="text" placeholder="Last name" required></div>
+        </div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@example.com" required></div>
+        <div class="row">
+          <div class="field">
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+              <option value="">Select</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field"><label for="dob">Date of Birth</label><input id="dob" type="date" required></div>
+        </div>
+        <div class="row">
+          
+          
+        </div>
+        <div class="field"><label for="msg-text">Message</label><textarea id="msg-text" rows="3" placeholder="Anything you'd like to say"></textarea></div>
+        <button type="submit" class="btn">Register Now</button>
+        <p id="msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 Dhruvika kadiya. All rights reserved.</footer>
+
+  <script>
+    // typing effect
+    const words = ["Web developer", "python", "AI/ML developer"];
+    const el = document.getElementById("typing");
+    let w = 0, c = 0, del = false;
+    (function type() {
+      const word = words[w];
+      el.textContent = word.slice(0, c);
+      if (!del && c === word.length) { del = true; return setTimeout(type, 1400); }
+      if (del && c === 0) { del = false; w = (w + 1) % words.length; }
+      c += del ? -1 : 1;
+      setTimeout(type, del ? 50 : 110);
+    })();
+
+    // registration form (demo: shows a message, does not send data anywhere)
+    document.getElementById("regForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("msg").textContent =
+        "Thank you, " + document.getElementById("fname").value + "! You are registered.";
+      this.reset();
+    });
+  </script>
+</body>
+</html>
